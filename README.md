@@ -20,6 +20,26 @@ A high-performance CLI utility powered by **`uv`** and **Telethon** to selective
 
 ---
 
+## Obtaining Telegram API Credentials (`api_id` and `api_hash`)
+
+To connect to Telegram's API via Telethon, you need your own `api_id` and `api_hash`:
+
+1. Log into [my.telegram.org](https://my.telegram.org) with your Telegram phone number and confirmation code.
+2. Click on **API development tools**.
+3. Fill out the **Create new application** form:
+   - **App title:** Any title for your tool (e.g., `My Media Downloader` — avoid using the word `"Telegram"`).
+   - **Short name:** 5–32 alphanumeric characters, letters and numbers only (**no spaces, underscores, or hyphens**, e.g., `mediadownloader01`).
+   - **URL:** Can be left blank (or use `https://example.com`).
+   - **Platform:** Select `Desktop` (or `Other`).
+   - **Description:** A short note (e.g., `Personal script for downloading chat media`).
+4. Click **Create application**.
+5. Copy your **`App api_id`** and **`App api_hash`**.
+6. Store them:
+   - **In 1Password (Recommended):** In your `Personal` vault under an item titled `Telegram`, add fields named `api_id` and `api_hash`.
+   - **Or as Environment Variables:** `export TELEGRAM_API_ID="your_id"` and `export TELEGRAM_API_HASH="your_hash"`.
+
+---
+
 ## Quick Start (with `uv`)
 
 Navigate to the project directory:
