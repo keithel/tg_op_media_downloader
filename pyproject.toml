@@ -1,7 +1,7 @@
 [project]
 name = "tg-media-downloader"
 version = "0.1.0"
-description = "Add your description here"
+description = "Fast, selective Telegram chat media downloader with date-range and message filtering, powered by Telethon, uv, and 1Password CLI integration"
 readme = "README.md"
 license = { file = "LICENSE" }
 authors = [
