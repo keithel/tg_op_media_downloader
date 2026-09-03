@@ -1,0 +1,22 @@
+[project]
+name = "tg-media-downloader"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+license = { file = "LICENSE" }
+authors = [
+    { name = "Keith Kyzivat", email = "keith.kyzivat@qt.io" }
+]
+requires-python = ">=3.12"
+dependencies = [
+    "cryptg>=0.6.0",
+    "python-dateutil>=2.9.0.post0",
+    "telethon>=1.44.0",
+]
+
+[project.scripts]
+tg-media-downloader = "tg_media_downloader:main"
+
+[build-system]
+requires = ["uv_build>=0.12.6,<0.13.0"]
+build-backend = "uv_build"
